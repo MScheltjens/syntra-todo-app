@@ -1,0 +1,17 @@
+$black: #000;
+$white: #fff;
+$green: #19ba99;
+$grey: #cbd5d2;
+$bodybg: #eef3f6;
+
+@use "./base/reset";
+@use "./base/extends";
+@use "./base/fonts";
+@use "./base/mixins" as *;
+@use "./base/Variables" as *;
+@use "./icons/icons";
+
+
+body{
+    background-color: $bodybg;
+}
