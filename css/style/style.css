@@ -117,7 +117,9 @@ main {
   height: 65px;
   background-color: #65c4ae;
   border-width: 0px;
-  border-radius: 7px 0 0 7px;
+  border-radius: 7px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   outline: none;
   padding-left: 25px;
   padding-right: 57.5px;
@@ -126,12 +128,6 @@ main {
   line-height: 20px;
   color: #fff;
   width: calc(100% - 32.5px);
-}
-.form__input::placeholder {
-  font-family: "Roboto";
-  font-size: 20px;
-  line-height: 20px;
-  color: #fff;
 }
 .form__submit {
   position: absolute;
@@ -143,77 +139,16 @@ main {
   background: #fff;
   border-width: 0;
   border: 1px solid #61b1a0;
-  cursor: pointer;
-}
-.form__submit:before {
-  content: "\e000";
-  font-family: "icons";
-  font-size: 28px;
-  color: #65c4ae;
-}
-.form--error .form__input {
-  color: red;
-}
-.form--error .form__submit {
-  cursor: not-allowed;
 }
 
-.list {
-  padding: 0px 18px;
-}
 .list__item {
-  border-radius: 7px;
+  min-height: 20px;
   background-color: #fff;
   margin-bottom: 12px;
-  padding: 13px 18px;
-  display: flex;
-  gap: 33px;
-  align-items: center;
 }
-.list__item__text {
-  margin-right: auto;
-  font-family: "Roboto";
-  font-size: 18px;
-  line-height: 21px;
-  color: #000;
-}
-.list__item__button {
-  font-size: 32px;
-  color: #19ba99;
-  position: relative;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  opacity: 0.65;
-  transform: opacity 300ms;
-  position: relative;
-}
-.list__item__button:after {
-  font-family: icons;
-}
-.list__item__button:hover {
-  opacity: 1;
-}
-.list__item__button--remove:after {
-  content: "\e001";
-}
-.list__item__button--check:after {
-  content: "\e002";
-}
-.list__item__button:not(:last-child):before {
-  content: "";
-  position: absolute;
-  left: 60px;
-  height: 40px;
-  top: 0;
-  width: 1px;
-  background-color: #cbd5d2;
-}
-.list__item--checked .list__item__text {
-  text-decoration: line-through;
-}
-.list__item--checked .list__item__button--check:after {
-  content: "\e003";
+.list__item span,
+.list__item button {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

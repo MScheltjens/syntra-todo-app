@@ -1,0 +1,22 @@
+{
+  "name": "to-do-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "css:prod": "sass ./css/style.scss ./css/style.css -s compressed --no-source-map",
+    "css:dev": "sass ./css/style.scss ./css/style.css -w",
+    "deploy": "surge ./ --domain https://todo-app-MaSch.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MScheltjens/syntra-todo-app.git"
+  },
+  "keywords": [],
+  "author": "MaSch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MScheltjens/syntra-todo-app/issues"
+  },
+  "homepage": "https://github.com/MScheltjens/syntra-todo-app#readme",
+  "description": ""
+}
