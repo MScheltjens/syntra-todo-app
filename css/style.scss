@@ -57,14 +57,17 @@ main{
             color: $lightgreen;
         }
     }
-    &--error{
-        .form__input{
-            color: red;
+    &--error {
+        .form__input {
+          background-color: $red;
         }
-        .form__submit{
-            cursor: not-allowed;
+        .form__submit {
+          cursor: not-allowed;
         }
-    }
+        .form__submit:before {
+          color: $red;
+        }
+      }
 }
 
 .list{

@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-</head>
-<body>
-<main>
-    <form action="" class="form form--error">
-        <input type="text" name="" id="" class="form__input" placeholder="Enter an activity...">
-        <button class="form__submit"></button>
-    </form>
-    <ul class="list">
-        <li class="list__item list__item--checked">
-            <span class="list__item__text">Gras Afrijden</span>
-            <button class="list__item__button list__item__button--remove"></button>
-            <button class="list__item__button list__item__button--check"></button>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form
+        action="test.php"
+        method="POST"
+        id="form"
+        class="form"
+        spellcheck="false"
+      >
+        <input
+          type="text"
+          name=""
+          id="field"
+          placeholder="Type a new todo eg.: Cleaning car"
+          class="form__input"
+        />
+        <button type="submit" class="form__submit"></button>
+      </form>
+      <ul class="list" id="list">
+        <!-- <li class="list__item list__item--checked">
+          <span class="list__item__text">Gras afrijden</span>
+          <button
+            class="list__item__button list__item__button--remove"
+          ></button>
+          <button class="list__item__button list__item__button--check"></button>
         </li>
         <li class="list__item">
-            <span class="list__item__text">Afwas doen</span>
-            <button class="list__item__button list__item__button--remove"></button>
-            <button class="list__item__button list__item__button--check"></button>
+          <span class="list__item__text">Tv kijken</span>
+          <button
+            class="list__item__button list__item__button--remove"
+          ></button>
+          <button class="list__item__button list__item__button--check"></button>
         </li>
         <li class="list__item list__item--checked">
-            <span class="list__item__text">Les geven</span>
-            <button class="list__item__button list__item__button--remove"></button>
-            <button class="list__item__button list__item__button--check"></button>
-        </li>
-    </ul>
-</main>
-<script src="js/index.js"></script>
-</body>
+          <span class="list__item__text">Nog iets doen</span>
+          <button
+            class="list__item__button list__item__button--remove"
+          ></button>
+          <button class="list__item__button list__item__button--check"></button>
+        </li> -->
+      </ul>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
